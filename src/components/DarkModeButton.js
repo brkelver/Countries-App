@@ -6,7 +6,7 @@ import { HiMoon } from "react-icons/hi2";
 
 function DarkModeButton() {
     const [mounted, setMounted] = useState(false)
-    const {theme, setTheme} = useTheme('light');
+    const {theme, setTheme} = useTheme();
 
     useEffect(() => {
         setMounted(true)
