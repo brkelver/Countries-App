@@ -1,4 +1,18 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'flagcdn.com'
+            },
+            {
+                protocol: 'https',
+                hostname: 'upload.wikimedia.org'
+            }
+        ]
+    },
+    reactStrictMode: false
+}
 
 module.exports = nextConfig
